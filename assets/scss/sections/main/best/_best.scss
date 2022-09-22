@@ -4,7 +4,7 @@
 .main {}
 
 .best {
-
+margin-bottom: 143px;
     &__title {
         max-width: 700px;
         font-family: 'Rosario';
@@ -51,8 +51,8 @@
 }
 
 .block-content__item:hover {
-    background-color: red;
-   
+    background: #f3fbf8;
+
 }
 
 
@@ -67,8 +67,8 @@
     margin-left: 20px;
 }
 
-.block-content__item-picture:hover {
-     background: black;
+.block-content__item>div>img:hover {
+ background-color: #555555;
 }
 
 .block-content__item-image {}

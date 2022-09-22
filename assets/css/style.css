@@ -242,6 +242,11 @@ ul
     padding-left: 20px;
 }
 
+.header
+{
+    margin-bottom: 140px;
+}
+
 .header-menu
 {
     display: -webkit-box;
@@ -412,36 +417,7 @@ ul
 
     color: #555;
 }
-.header-content__action
-{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
 
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 20px;
-}
-.header-content__action-link
-{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
-    width: 64px;
-    height: 64px;
-
-    border-radius: 60px;
-    background: #09a66d;
-
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
 .header-content__bg
 {
     position: absolute;
@@ -504,6 +480,40 @@ ul
     color: #000;
 }
 
+.action
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 20px;
+}
+.action-link
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 64px;
+    height: 64px;
+
+    border-radius: 60px;
+    background: #09a66d;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.best
+{
+    margin-bottom: 143px;
+}
 .best__title
 {
     font-family: 'Rosario';
@@ -577,7 +587,7 @@ ul
 
 .block-content__item:hover
 {
-    background-color: red;
+    background: #f3fbf8;
 }
 
 .block-content__item-picture
@@ -601,9 +611,9 @@ ul
     align-items: center;
 }
 
-.block-content__item-picture:hover
+.block-content__item > div > img:hover
 {
-    background: black;
+    background-color: #555;
 }
 
 .block-content__text
@@ -636,4 +646,60 @@ ul
 .best-block__image
 {
     max-width: 510px;
+}
+
+.special
+{
+    background-color: rgba(9, 166, 109, .05);
+}
+
+.special-box
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    padding-top: 80px;
+    padding-bottom: 140px;
+
+    gap: 50px;
+}
+
+.special-box__content
+{
+    position: relative;
+}
+
+.special-box__content-title
+{
+    font-family: 'Rosario';
+    font-size: 70px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 90px;
+
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    color: #222;
+}
+
+.special-box__content-description
+{
+    font-family: 'DM Sans';
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+
+    margin-bottom: 30px;
+
+    color: #555;
+}
+
+.special-box__content-image
+{
+    position: absolute;
+    right: -200px;
+    bottom: -120px;
 }
