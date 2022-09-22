@@ -2,11 +2,10 @@
 @use '../../mixins' as *;
 
 .header {
-    // height: 100vh;
+  
 }
 
-.header-menu
-{
+.header-menu {
     display: flex;
 
     justify-content: space-between;
