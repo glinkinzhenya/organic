@@ -1,0 +1,102 @@
+@use '../../presets' as *;
+@use '../../mixins' as *;
+
+.about {
+    display: flex;
+    gap: 100px;
+        align-items: flex-end;
+
+    &-box {
+
+        &__title {
+            max-width: 640px;
+            font-family: 'Rosario';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 70px;
+            line-height: 90px;
+            color: #222222;
+            margin-bottom: 30px;
+        }
+
+        &__description {
+            max-width: 587px;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: #555555;
+            margin-bottom: 40px;
+        }
+
+        &__name {}
+
+        &__name-text {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 36px;
+            color: #222222;
+            margin-bottom: 20px;
+        }
+
+        &__name-star {
+            display: flex;
+            gap: 165px;
+        }
+
+        &__name-picture {}
+
+        &__name-image {}
+
+        &__name-action {
+
+            display: flex;
+            gap: 20px;
+        }
+
+        &__name-link {
+            width: 55px;
+            height: 55px;
+           
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #cccccc;
+            &:hover {
+                background-color: #09a66d; 
+            }
+        }
+
+        &__name-link-image {}
+
+
+    }
+
+
+
+    &-item {
+position: relative;
+        &__face {}
+
+        &__face-image {}
+
+        &__people {
+
+        }
+
+        &__people-image {
+            width: 220px;
+            position: absolute;
+            bottom: 55px;
+        }
+
+    }
+
+
+
+
+}

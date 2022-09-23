@@ -1,8 +1,9 @@
-@use '../../../presets' as *;
-@use '../../../mixins' as *;
+@use '../../presets' as *;
+@use '../../mixins' as *;
 
 .special {
     background-color: rgba(9, 166, 109, 0.05);
+    margin-bottom: 95px;
 }
 
 .special-box {
