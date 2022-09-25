@@ -28,11 +28,16 @@
         font-weight: 700;
         font-size: 70px;
         line-height: 90px;
+
+        @include lg {
+            font-size: 50px;
+            text-align: center;
+        }
     }
 
     &__description {
         text-align: center;
-        width: 638px;
+        max-width: 638px;
 
         font-family: 'DM Sans';
         font-style: normal;
@@ -41,6 +46,8 @@
         line-height: 30px;
         color: #555555;
         margin-bottom: 40px;
+
+
     }
 
     // &__action {
@@ -86,12 +93,29 @@
     display: flex;
     gap: 107px;
 
+    @include xl {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+
 
     &__picture {}
 
-    &__image {}
+    &__image {
+        width: 100%;
+    }
 
-    &__block {}
+    &__block {
+        @include xl {
+
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
 
     &__item {
         display: flex;
@@ -119,6 +143,8 @@
             line-height: 48px;
             text-align: center;
             color: #000000;
+
+
         }
 
         &-description {

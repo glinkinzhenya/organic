@@ -13,4 +13,8 @@
     align-items: center;
     margin-top: 50px;
     margin-bottom: 40px;
+
+    @include lg {
+      flex-direction: column;
+    }
 }

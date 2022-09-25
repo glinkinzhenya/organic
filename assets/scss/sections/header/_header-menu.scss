@@ -26,12 +26,12 @@
 }
 
 .header-navbar__link:hover {
-   background: #09A66D;
-   border-radius: 8px;
+    background: #09A66D;
+    border-radius: 8px;
     color: #ffffff;
     //padding: 10px 0px;
     transform: scale(1.1);
-   
+
 }
 
 .active {
@@ -41,14 +41,20 @@
     //padding: 10px;
 }
 
-.header-menu__logo {}
+.header-menu__logo {
+
+    @include lg {
+        order: -1;
+    }
+}
 
 .header-menu__image {
     transition: 0.5s;
 
 }
+
 .header-menu__image:hover {
-   transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 .header-menu__client {
@@ -101,7 +107,8 @@
     border: none;
     background: #09A66D;
     border-radius: 8px;
-     &:hover {
+
+    &:hover {
         box-shadow: 0 0 15px green;
     }
 }
@@ -115,5 +122,97 @@
     color: #ffffff;
     padding: 10px;
 
-   
+
+}
+
+.navbar-hamburger {
+
+}
+
+
+/* Icon 1 */
+// !вместо id #nav-icon1 ставим имя своего класса
+// !обязательно прописываем название класса в файле js
+
+.navbar-hamburger {
+    position: relative;
+    // *уменьшаем физические габариты гамбургерга, уменьшаем в два раза (делим размеры на 2)
+    // width: 60px;
+
+    width: 30px;
+    // height: 45px;
+    height: 22.5px;
+    // margin: 50px auto;
+    margin: 25px auto;
+
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    transform: rotate(0deg);
+    // гамбургер отображается менше 768px
+
+    @include md-min {
+        display: none;
+    }
+
+    span {
+        position: absolute;
+        left: 0;
+        // *уменьшаем физические размеры шрифта, уменьшаем в два раза (делим размеры на 2)
+
+        display: block;
+
+        width: 100%;
+        // height: 9px;
+        height: 5px;
+
+        transition: 0.25s ease-in-out;
+        transform: rotate(0deg);
+
+        opacity: 1;
+        // border-radius: 9px;
+        border-radius: 3px;
+        background: red;
+
+        // можно поменять цвета
+        &:nth-child(1) {
+            top: 0;
+
+            background: #a4a14a;
+        }
+
+        &:nth-child(2) {
+            // top: 18px;
+            top: 9px;
+
+            background: #ffc500;
+        }
+
+        &:nth-child(3) {
+            // top: 36px;
+            top: 18px;
+
+            background: #ff6336;
+        }
+    }
+
+    &.open span:nth-child(1) {
+        // top: 18px;
+        top: 9px;
+
+        transform: rotate(135deg);
+    }
+
+    &.open span:nth-child(2) {
+        // left: -60px;
+        left: -30px;
+
+        opacity: 0;
+    }
+
+    &.open span:nth-child(3) {
+        // top: 18px;
+        top: 9px;
+
+        transform: rotate(-135deg);
+    }
 }
