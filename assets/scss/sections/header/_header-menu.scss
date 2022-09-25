@@ -12,18 +12,44 @@
 
 .header-navbar__item {}
 
+
+
 .header-navbar__link {
+    padding: 10px 10px;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     color: #222222;
+    transition: 0.5s;
+}
+
+.header-navbar__link:hover {
+   background: #09A66D;
+   border-radius: 8px;
+    color: #ffffff;
+    //padding: 10px 0px;
+    transform: scale(1.1);
+   
+}
+
+.active {
+    background: #09A66D;
+    border-radius: 8px;
+    color: #ffffff;
+    //padding: 10px;
 }
 
 .header-menu__logo {}
 
-.header-menu__image {}
+.header-menu__image {
+    transition: 0.5s;
+
+}
+.header-menu__image:hover {
+   transform: scale(1.5);
+}
 
 .header-menu__client {
     display: flex;
@@ -75,6 +101,9 @@
     border: none;
     background: #09A66D;
     border-radius: 8px;
+     &:hover {
+        box-shadow: 0 0 15px green;
+    }
 }
 
 .header-client__button-link {
@@ -85,4 +114,6 @@
     line-height: 20px;
     color: #ffffff;
     padding: 10px;
+
+   
 }

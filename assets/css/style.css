@@ -282,7 +282,45 @@ ul
     font-style: normal;
     line-height: 24px;
 
+    padding: 10px 10px;
+
+    -webkit-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
+
     color: #222;
+}
+
+.header-navbar__link:hover
+{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+
+    color: #fff;
+    border-radius: 8px;
+    background: #09a66d;
+}
+
+.active
+{
+    color: #fff;
+    border-radius: 8px;
+    background: #09a66d;
+}
+
+.header-menu__image
+{
+    -webkit-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
+}
+
+.header-menu__image:hover
+{
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
 }
 
 .header-menu__client
@@ -345,6 +383,11 @@ ul
     border: none;
     border-radius: 8px;
     background: #09a66d;
+}
+.header-client__button:hover
+{
+    -webkit-box-shadow: 0 0 15px green;
+            box-shadow: 0 0 15px green;
 }
 
 .header-client__button-link
