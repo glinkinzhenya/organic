@@ -4,9 +4,10 @@
 .main {}
 
 .best {
-margin-bottom: 143px;
+    margin-bottom: 143px;
+
     &__title {
-        max-width: 700px;
+
         font-family: 'Rosario';
         font-style: normal;
         font-weight: 700;
@@ -14,15 +15,33 @@ margin-bottom: 143px;
         line-height: 90px;
         color: #222222;
         margin-bottom: 20px;
+
+        @include lg-min {
+            max-width: 700px;
+        }
+
+        @include lg {
+            font-size: 50px;
+            text-align: center;
+        }
+
     }
 
     &__description {
-        max-width: 700px;
+
         font-weight: 400;
         font-size: 18px;
         line-height: 30px;
         color: #555555;
         margin-bottom: 30px;
+
+        @include lg-min {
+            max-width: 700px;
+        }
+
+        @include lg {
+            text-align: center;
+        }
     }
 
 }
@@ -31,6 +50,14 @@ margin-bottom: 143px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+        gap: 20px;
+
+
+
+    @include lg {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .block-content {
@@ -57,7 +84,7 @@ margin-bottom: 143px;
 
 
 .block-content__item-picture {
-    width: 80px;
+    min-width: 80px;
     height: 80px;
     background: #F3FBF8;
     border-radius: 60px;
@@ -65,18 +92,20 @@ margin-bottom: 143px;
     justify-content: center;
     align-items: center;
     margin-left: 20px;
+
+
 }
 
 .block-content__item>div>img:hover {
- background-color: #555555;
+    background-color: #555555;
 }
 
 .block-content__item-image {}
 
 
 .block-content__text {
-    padding-right: 20px;
 }
+
 
 .block-content__title {
     font-weight: 700;
@@ -94,8 +123,16 @@ margin-bottom: 143px;
     color: #555555;
 }
 
-.best-block__picture {}
+.best-block__picture {
+    @include lg {
+        order: -1;
+    }
+}
 
 .best-block__image {
     max-width: 510px;
+    
+@include sm {
+    width: 100%;
+}
 }

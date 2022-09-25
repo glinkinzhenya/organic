@@ -83,7 +83,9 @@
     z-index: -1;
 
 
-    &-image {}
+    &-image {
+        width: 100%;
+    }
 
 }
 
@@ -96,6 +98,10 @@
     @include xl {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    @include sm {
+    gap: 40px;
     }
 
 

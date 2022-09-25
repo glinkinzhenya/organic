@@ -125,16 +125,13 @@
 
 }
 
-.navbar-hamburger {
-
-}
-
-
-/* Icon 1 */
-// !вместо id #nav-icon1 ставим имя своего класса
-// !обязательно прописываем название класса в файле js
 
 .navbar-hamburger {
+
+    @include sm-min {
+        display: none;
+    }
+
     position: relative;
     // *уменьшаем физические габариты гамбургерга, уменьшаем в два раза (делим размеры на 2)
     // width: 60px;
@@ -171,27 +168,27 @@
         opacity: 1;
         // border-radius: 9px;
         border-radius: 3px;
-        background: red;
+        background: #09a66d;
 
         // можно поменять цвета
         &:nth-child(1) {
             top: 0;
 
-            background: #a4a14a;
+            //background: #a4a14a;
         }
 
         &:nth-child(2) {
             // top: 18px;
             top: 9px;
 
-            background: #ffc500;
+            // //background: #ffc500;
         }
 
         &:nth-child(3) {
             // top: 36px;
             top: 18px;
 
-            background: #ff6336;
+            // background: #ff6336;
         }
     }
 
@@ -216,3 +213,28 @@
         transform: rotate(-135deg);
     }
 }
+
+.navbar-hamburger {
+    position: relative;
+    z-index: 5;
+
+    display: none;
+
+    width: 30px;
+    height: 22.5px;
+    margin-left: auto;
+
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    transform: rotate(0deg);
+
+    @include sm {
+        display: block;
+    }
+}
+
+// .navbar-hamburger.open {
+//     position: absolute;
+//     top: 20px;
+//     right: 20px;
+// }
