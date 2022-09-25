@@ -1,0 +1,86 @@
+@use '../../presets' as *;
+@use '../../mixins' as *;
+
+.footer {
+    background: #FCFEFD;
+    padding-top: 67px;
+    padding-bottom: 118px;
+
+
+    &-container {
+        display: flex;
+        gap: 100px;
+        align-items: center;
+    }
+
+    &-section {
+        max-width: 345px;
+
+
+
+
+        &__picture {
+            margin-bottom: 30px;
+        }
+
+        &__image {}
+
+        &__description {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: #555555;
+        }
+    }
+
+    &-item {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &__title {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 31px;
+            color: #222222;
+            margin-bottom: 20px;
+        }
+
+        &__link {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            color: #222222;
+        }
+
+        &__description {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            color: #555555;
+        }
+
+        &--md {}
+
+        &__action {}
+
+        &__social {
+            display: flex;
+            gap: 50px;
+
+            &-link {}
+
+            &-image {}
+
+        }
+    }
+}
