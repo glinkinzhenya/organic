@@ -3,11 +3,12 @@
 
 .header {
   margin-bottom: 140px;
+  
 }
 
 .header-menu {
     display: flex;
-
+  position: relative;
     justify-content: space-between;
     gap: 20px;
     align-items: center;

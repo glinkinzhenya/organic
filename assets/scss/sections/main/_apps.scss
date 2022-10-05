@@ -1,11 +1,30 @@
 @use '../../presets' as *;
 @use '../../mixins' as *;
 
+
+
+
+.apps-picture {
+    position: relative;
+
+}
+
 .apps {
     display: flex;
     gap: 113px;
-    position: relative;
+    justify-content: center;
+
     align-items: center;
+    // background-color: red;
+
+
+
+    @include xl {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
 
     &-first__picture {}
 
@@ -13,9 +32,9 @@
 
     &-secondary__picture {
         position: absolute;
-        top: 50%;
-        left: -10px;
-        transform: translateY(-50%);
+        top: 33px;
+        left: -50px;
+
         z-index: -1;
     }
 
@@ -51,10 +70,12 @@
             font-weight: 700;
             font-size: 70px;
             line-height: 90px;
-            /* or 129% */
-
-
             color: #222222;
+
+            @include sm {
+                font-size: 50px;
+                line-height: 60px;
+            }
         }
 
         &__description {
@@ -66,10 +87,12 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 30px;
-            /* or 167% */
-
-
             color: #555555;
+
+            @include sm {
+                margin-bottom: 7px;
+            }
+
         }
 
         &__button {}

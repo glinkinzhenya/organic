@@ -25,6 +25,10 @@
             text-align: center;
         }
 
+        @include sm {
+            line-height: 60px;
+        }
+
     }
 
     &__description {

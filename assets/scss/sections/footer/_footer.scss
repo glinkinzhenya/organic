@@ -11,13 +11,20 @@
         display: flex;
         gap: 100px;
         align-items: center;
+        justify-content: space-between;
+
+        @include xl {
+            flex-direction: column;
+        }
     }
 
     &-section {
         max-width: 345px;
 
 
-
+        @include xl {
+            max-width: 663px;
+        }
 
         &__picture {
             margin-bottom: 30px;
@@ -32,10 +39,30 @@
             font-size: 18px;
             line-height: 30px;
             color: #555555;
+
         }
     }
 
+    &-box {
+        display: flex;
+        gap: 140px;
+  
+        max-width: 663px;
+
+        @include md {
+            gap: 78px;
+        }
+
+                @include sm {
+                    gap: 25px;
+                flex-wrap: wrap;
+                    justify-content: center;
+                }
+    }
+
     &-item {
+
+   
         height: 200px;
         display: flex;
         flex-direction: column;

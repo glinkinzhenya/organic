@@ -1,16 +1,44 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
 
-.header-menu__navbar {}
+.header-menu__navbar {
+ 
 
-.header-navbar {}
+
+}
+
+.header-navbar {
+
+}
 
 .header-navbar__list {
     display: flex;
     gap: 40px;
+    @include sm {
+        display: none;
+        position: absolute;
+        z-index: 5;
+      top: 100%;
+        left: 0;
+         right: 0;
+        background-color: #f4faf8;
+        height: 50vh;
+       
+    }
 }
 
-.header-navbar__item {}
+.header-navbar__item {
+
+
+    @include sm {
+        padding: 8px;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background: #09A66D;
+        border-radius: 10px;
+    }
+}
 
 
 
@@ -35,10 +63,14 @@
 }
 
 .active {
-    background: #09A66D;
+  
+
+    @include sm-min {
+         background: #09A66D;
     border-radius: 8px;
     color: #ffffff;
-    //padding: 10px;
+    //padding: 10px; 
+    }
 }
 
 .header-menu__logo {

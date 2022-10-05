@@ -4,8 +4,17 @@
 .about {
     display: flex;
     gap: 100px;
-        align-items: flex-end;
-        margin-bottom: 150px;
+    align-items: flex-end;
+    margin-bottom: 150px;
+
+
+    @include xl {
+        flex-wrap: wrap;
+        justify-content: center;
+            align-items: center;
+    }
+
+  
 
     &-box {
 
@@ -18,6 +27,11 @@
             line-height: 90px;
             color: #222222;
             margin-bottom: 30px;
+            @include sm {
+                font-size: 50px;
+                    text-align: center;
+                    line-height: 60px;
+                }
         }
 
         &__description {
@@ -31,7 +45,11 @@
             margin-bottom: 40px;
         }
 
-        &__name {}
+        &__name {
+            @include sm {
+                    text-align: center;
+            }
+        }
 
         &__name-text {
             font-family: 'DM Sans';
@@ -45,7 +63,13 @@
 
         &__name-star {
             display: flex;
-            gap: 165px;
+           
+  gap: 20px 165px;
+            @include sm {
+                  
+                        flex-wrap: wrap;
+                        justify-content: center;
+            }
         }
 
         &__name-picture {}
@@ -61,14 +85,15 @@
         &__name-link {
             width: 55px;
             height: 55px;
-           
+
             border-radius: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
             border: 1px solid #cccccc;
+
             &:hover {
-                background-color: #09a66d; 
+                background-color: #09a66d;
             }
         }
 
@@ -80,14 +105,15 @@
 
 
     &-item {
-position: relative;
+        position: relative;
+
         &__face {}
 
-        &__face-image {}
-
-        &__people {
-
+        &__face-image {
+                width: 100%;
         }
+
+        &__people {}
 
         &__people-image {
             width: 220px;
